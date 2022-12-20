@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+body, html {
+  overflow-x: hidden
+}
+
+nav {
+  margin: 0 auto;
+  max-width: 1100px;
+  width: 100%;
+}
+
+#checkbox-menu, .toogle {
+  display: none;
+} 
+
+.menu {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none;
+  height: 50px; 
+}
+
+.menu li a {
+  padding: 10px 15px;
+  color: black;
+  align-self: center;
+  font-size: 13px;
+  text-decoration: none;
+  transition: background .2s linear;
+}
+
+.menu li a:hover {
+  border-radius: 3px;
+  background: #ffcc01;
+}
+
+.menu li a.logo {
+  font-size: 25px;
+  margin-right: 240px;
+}
+
+.menu li a.contacts {
+  margin-right: 100px;
+}
+
+@media screen and (max-width: 765px) {
+  .toogle {
+    display: block;
+    clear: both;
+    line-height: 40px;
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    width: 100%;
+    color: black;
+    transition: all .1s linear;
+    background: #ffcc01;
+  }
+
+  .toogle:hover {
+    background: #d3a900;
+  }
+  
+  #checkbox-menu:checked + label .touch li {
+    opacity: 1; 
+    visibility: visible;
+    transition: all .7s linear;
+  }
+
+  #checkbox-menu:checked + label .touch {
+    height: 350px;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 0;
+    transition: height .3s linear;
+  }
+
+  .menu li {
+    display: flex;
+    align-self: center;
+    opacity: 0;
+    width: 95%;
+    visibility: hidden;
+  }
+
+  .menu li a {
+    width: 95%;
+    text-align: center;
+    align-self: center;
+    align-content: center;
+  }
+
+  .menu li a.logo {
+    font-size: 21px;
+    margin-right: 0;
+  }
+  
+  .menu li a.contacts {
+    margin-right: 0;
+  }
+}
