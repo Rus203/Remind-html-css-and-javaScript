@@ -115,7 +115,7 @@ nav {
   margin-bottom: 70px;
 }
 
-.stats-line p {
+.stats-text p {
   margin-top: 50px;
   font-size: 13px;
   line-height: 27px;
@@ -142,6 +142,97 @@ nav {
 .square-text {
   font-size: 14px;
   font-weight: 700;
+}
+
+.apartments  {
+  background-color: #f6f5f4;
+  padding: 60px 0;
+}
+
+.apart h2 {
+  font-size: 40px;
+  margin-bottom: 85px;
+}
+
+.card { 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 348px;
+  background-color: white;
+}
+
+.card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  background-color: #fafaf9;
+}
+
+.card-container {
+  padding: 25px;
+}
+
+.card-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.card-info i {
+  margin-right: 8px;
+}
+
+.card-info .money {
+  font-size: 18px;
+  color: #ffcc01;
+}
+
+.card-info span:first-child {
+  margin-right: 18px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 30px;
+  column-gap: 30px;
+}
+
+.apart input[type=text] {
+  margin-top: 50px;
+  width: 300px;
+  height: 70px;
+  border: none;
+  color: #919eb1;
+  font-size: 15px;
+  border-radius: 4px 0 0 4px;
+  background-image: url("./images/search.svg");
+  background-repeat: no-repeat;
+  background-position: 27px;
+  outline: none;
+  padding-left: 62px;
+}
+
+.apart input[type=submit] {
+  width: 115px;
+  border: none;
+  height: 70px;
+  background-color: #ffcc01;
+  font-size: 15px;
+  margin-left: -15px;
+  border-radius: 0 4px 4px 0;
+}
+
+.all {
+  height: 70px;
+  width: 250px;
+  font-size: 15px;
+  border: none;
+  border-radius: 4px;
+  margin-left: 40px;
+  margin-top: 52px;
+}
+
+.button-search {
+  display: flex;
 }
 
 @media screen and (max-width: 765px) {
@@ -260,5 +351,28 @@ nav {
   .square {
     height: 130px;
     min-width: 130px;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    row-gap: 10px;
+    justify-content: center;
+  }
+
+  .apart input[type=text] {
+    margin-top: 10px;
+    width: 130px;
+  }
+
+  .button-search {
+    flex-direction: column;
+    margin-left: 20px;
+  }
+
+  .all {
+    margin-top: 10px;
+    margin-left: 0;
   }
 }
