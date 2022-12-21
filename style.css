@@ -52,6 +52,98 @@ nav {
   margin-right: 100px;
 }
 
+.wrapper {
+  margin: 0 auto;
+  max-width: 1100px;
+  width: 100%;
+}
+
+.intro {
+  margin-top: 25px;
+  display: flex;
+  justify-content: flex-end ;
+}
+.intro-img {
+  background-image: url("./images/case_2.jpg");
+  width: 965px;
+  height: 640px;
+}
+
+.intro .intro-text {
+  position: absolute;
+  top: 220px;
+  right: 750px;
+  font-size: 62px;
+}
+
+.intro-contacts {
+  position: absolute;
+  max-width: 590px;
+  top: 638px;
+  right: 170px;
+  padding: 30px 50px;
+  background-color: #ffcc01;
+  display: flex;
+  justify-content: space-between;
+}
+
+.intro-contacts i {
+  color: white;
+  margin-right: 30px;
+}
+
+.intro-contacts p {
+  font-size: 18;
+  margin-right: 60px;
+}
+
+.stats {
+  display: flex;
+  margin-top: 130px;
+}
+
+.stats-line {
+  display: flex;
+}
+
+.stats-text {
+  padding: 20px;
+}
+
+.stats-line h2 {
+  font-size: 40px;
+  margin-bottom: 70px;
+}
+
+.stats-line p {
+  margin-top: 50px;
+  font-size: 13px;
+  line-height: 27px;
+}
+
+.square {
+  width: 200px;
+  height: 200px;
+  background-color: #f6f5f4;
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.stats-square {
+  font-size: 40px;
+  font-weight: 700;
+  color: #ffcc01;
+  margin-bottom: 15px;
+}
+
+.square-text {
+  font-size: 14px;
+  font-weight: 700;
+}
+
 @media screen and (max-width: 765px) {
   .toogle {
     display: block;
@@ -71,7 +163,7 @@ nav {
   }
   
   #checkbox-menu:checked + label .touch li {
-    opacity: 1; 
+    /* opacity: 1;  */
     visibility: visible;
     transition: all .7s linear;
   }
@@ -92,7 +184,7 @@ nav {
   .menu li {
     display: flex;
     align-self: center;
-    opacity: 0;
+    /* opacity: 0; */
     width: 95%;
     visibility: hidden;
   }
@@ -111,5 +203,62 @@ nav {
   
   .menu li a.contacts {
     margin-right: 0;
+  }
+
+  .intro {
+    margin-top: 0;
+    display: block;
+    max-width: 100%;
+  }
+
+  .intro-img {
+    background-repeat: no-repeat;
+  }
+
+  .intro .intro-text {
+    position: relative;
+    left: 20px;
+    top: 80px;
+    font-size: 35px;
+  }
+
+  .intro .intro-contacts {
+    position: relative;
+    top: 0px;
+    left: 0px;
+  }
+
+  .intro-contacts p {
+    margin-right: 0;
+    font-size: 13px;
+  }
+
+  .intro-contacts i {
+    margin-right: 10px;
+  }
+
+  .stats {
+    margin-top: 0;
+    flex-direction: column;
+  }
+
+  .stats-text {
+    padding: 10px;
+  }
+
+  .stats-text h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .stats-text p {
+    margin-top: 5px;
+    line-height: 18px;
+    font-size: 13px;
+  }
+
+  .square {
+    height: 130px;
+    min-width: 130px;
   }
 }
